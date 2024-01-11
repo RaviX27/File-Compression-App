@@ -23,7 +23,9 @@ export class CompressionComponent {
 
       this.fileService.compressFile(formData).subscribe(
         (result: any) => {
-          console.log('Compressed data:', result);
+          console.log('Compression success:', result.message);
+          console.log('Compressed data:', result.compressedData);
+          console.log('Compressed file path:', result.compressedFilePath);
         },
         (error) => {
           console.error('Error compressing file:', error);
