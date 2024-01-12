@@ -8,27 +8,38 @@ import { FileService } from 'src/app/service/file.service';
 })
 export class DecompressionComponent {
 
-  fileToCompress!: File;
+  fileToDecompress!: File;
 
-  constructor(private fileService : FileService){}
+  constructor(private fileService: FileService) {}
 
-  onFileChange(event : any){
-    this.fileToCompress = event.target.files[0];
+  onFileChange(event: any) {
+    this.fileToDecompress = event.target.files[0];
   }
 
-  decompressFile(){
-    if(this.fileToCompress){
-      const formData = new FormData();
-      formData.append('file',this.fileToCompress);
-
-      this.fileService.decompressFile(formData).subscribe((result : any)=>{
-        console.log('Compressed data:', result);
-      },
-      (error)=>{
-        console.error('Error compressing file:', error);
-      }
-      );
+  decompressFile() {
+    if (!this.fileToDecompress) {
+      // Show alert box to the user if no file is selected
+      this.showAlert('Please select a file for decompression');
+      return;
     }
+
+    const formData = new FormData();
+    formData.append('file', this.fileToDecompress);
+
+    this.fileService.decompressFile(formData).subscribe(
+      (result: any) => {
+        console.log('Decompressed data:', result);
+
+        this.showAlert(`File decompressed successfully. Decompressed file path: ${result.decompressedFilePath}`);
+      },
+      (error) => {
+        console.error('Error decompressing file:', error);
+        this.showAlert(`Error decompressing file: ${error}`);
+      }
+    );
   }
 
+  private showAlert(message: string): void {
+    window.alert(message);
+  }
 }
