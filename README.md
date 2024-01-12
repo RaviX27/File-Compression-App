@@ -1,6 +1,7 @@
 Huffman File Compression 📦💻
 
-Welcome to the Huffman File Compression project! 🚀 This application utilizes the Huffman coding algorithm to compress and decompress files efficiently.
+Welcome to the Huffman File Compression project! 🚀 
+This application utilizes the Huffman coding algorithm to compress and decompress files efficiently.
 
 Table of Contents 📋
 Introduction
@@ -10,7 +11,9 @@ How to Use
 Contributing
 
 Introduction 📝
-Ever wanted to compress files with style? Look no further! The Huffman File Compression project is here to save your storage space while maintaining data integrity. Say goodbye to bulky files and hello to elegance in compression.
+Ever wanted to compress files with style? Look no further! 
+The Huffman File Compression project is here to save your storage space while maintaining data integrity. S
+ay goodbye to bulky files and hello to elegance in compression.
 
 Technologies Used 💻
 Java: The backbone of our project.
@@ -39,5 +42,7 @@ Open your browser and visit http://localhost:8080.
 Upload your file.
 Click "Compress" and witness the magic!
 Explore other features on the user-friendly interface.
+
 Contributing 🤝
-We welcome contributions! Feel free to submit issues, feature requests, or pull requests. Let's make Huffman File Compression even better together. 🌈
+We welcome contributions! Feel free to submit issues, 
+feature requests, or pull requests. Let's make Huffman File Compression even better together. 🌈
