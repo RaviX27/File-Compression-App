@@ -29,7 +29,7 @@ Spring Boot: Powering our RESTful backend.
 
 Spring Web: Handling web-related functionality.
 
-Angular (Assumed): For a dynamic and interactive frontend.
+Angular: For a dynamic and interactive frontend.
 
 HTML & CSS: Crafting a visually appealing user interface.
 
