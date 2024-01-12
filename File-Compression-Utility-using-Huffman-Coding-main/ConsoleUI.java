@@ -13,25 +13,35 @@ public class ConsoleUI {
         scanner.close();
 
         try {
-            String originalData = MyFileReader.readFile(filePath);
-
-            HuffmanTree huffmanTree = new HuffmanTree();
-            HuffmanNode root = huffmanTree.buildHuffmanTree(originalData);
-
-            HuffmanCoding huffmanCoding = new HuffmanCoding();
-            huffmanCoding.generateHuffmanCode(root, "");
 
             String resultData = "";
             String resultFilePath = "";
 
             if (choice == 'C') {
                 // Compressing data
+                String originalData = MyFileReader.readFile(filePath);
+
+                HuffmanTree huffmanTree = new HuffmanTree();
+                HuffmanNode root = huffmanTree.buildHuffmanTree(originalData);
+
+                HuffmanCoding huffmanCoding = new HuffmanCoding();
+                huffmanCoding.generateHuffmanCode(root, "");
+
                 resultData = huffmanCoding.compress(originalData);
                 resultFilePath = filePath + ".compressed";
                 System.out.println("Compressed data: " + resultData);
                 System.out.println("Compressed data saved to: " + resultFilePath);
                 
             } else if (choice == 'D') {
+
+                String originalData = MyFileReader.readFile(filePath);
+
+                HuffmanTree huffmanTree = new HuffmanTree();
+                HuffmanNode root = huffmanTree.buildHuffmanTree(originalData);
+
+                HuffmanCoding huffmanCoding = new HuffmanCoding();
+                huffmanCoding.generateHuffmanCode(root, "");
+                
                 // Decompressing data
                 resultData = MyFileReader.readFile(filePath + ".compressed");
                 resultData = huffmanCoding.decompress(resultData, root);
