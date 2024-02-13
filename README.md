@@ -1,64 +1,37 @@
-Huffman File Compression 📦💻
+# Huffman File Compression
 
-Welcome to the Huffman File Compression project! 🚀 
-This application utilizes the Huffman coding algorithm to compress and decompress files efficiently.
+Welcome to the Huffman File Compression project! This application utilizes the Huffman coding algorithm to compress and decompress files efficiently.
 
-Table of Contents 📋
+## Introduction
 
-Introduction
+Ever wanted to compress files with style? Look no further! The Huffman File Compression project is here to save your storage space while maintaining data integrity. Say goodbye to bulky files and hello to elegance in compression.
 
-Technologies Used
+## Technologies Used
 
-Features
+- Java: The backbone of our project.
+- Spring Boot: Powering our RESTful backend.
+- Angular: For a dynamic and interactive frontend.
+- HTML & CSS: Crafting a visually appealing user interface.
+- Huffman Coding: Bringing efficient compression to life.
 
-How to Use
+## Features
 
-Contributing
+- File compression with the magic of Huffman coding.
+- Sleek and responsive user interface for easy file uploads.
+- Efficient decompression to retrieve your original data.
+- Detailed error handling to keep things smooth.
 
-Introduction 📝
+## How to Use
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/RaviX27/huffman-file-compression.git
+2. Navigate to the project directory.
+  cd huffman-file-compression 
+3. Run the application. (Assuming you have Maven installed)
+   mvn spring-boot:run
+4. Open your browser and visit http://localhost:8080.
+5. Upload your file. Click "Compress" and witness the magic! Explore other features on the user-friendly interface.
 
-Ever wanted to compress files with style? Look no further! The Huffman File 
-Compression project is here to save your storage space while maintaining data integrity. 
-Say goodbye to bulky files and hello to elegance in compression.
+## Contributing
 
-Technologies Used 💻
-
-Java: The backbone of our project.
-
-Spring Boot: Powering our RESTful backend.
-
-Spring Web: Handling web-related functionality.
-
-Angular: For a dynamic and interactive frontend.
-
-HTML & CSS: Crafting a visually appealing user interface.
-
-Huffman Coding: Bringing efficient compression to life.
-
-Features 🌟
-
-File compression with the magic of Huffman coding.
-Sleek and responsive user interface for easy file uploads.
-Efficient decompression to retrieve your original data.
-Detailed error handling to keep things smooth.
-
-How to Use 🚀
-
-Clone the repository to your local machine.
-
-git clone https://github.com/RaviX27/huffman-file-compression.git
-Navigate to the project directory.
-
-cd huffman-file-compression
-Run the application.
-
-Assuming you have Maven installed: mvn spring-boot:run
-Open your browser and visit http://localhost:8080.
-
-Upload your file.
-Click "Compress" and witness the magic!
-Explore other features on the user-friendly interface.
-
-Contributing 🤝
-We welcome contributions! Feel free to submit issues, feature requests, 
-or pull requests. Let's make Huffman File Compression even better together. 🌈
+We welcome contributions! Feel free to submit issues, feature requests, or pull requests. Let's make Huffman File Compression even better together.
