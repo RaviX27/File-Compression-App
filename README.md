@@ -26,11 +26,13 @@ Ever wanted to compress files with style? Look no further! The Huffman File Comp
    ```bash
    git clone https://github.com/RaviX27/huffman-file-compression.git
 2. Navigate to the project directory.
-  cd huffman-file-compression 
-3. Run the application. (Assuming you have Maven installed)
+   ```bash
+   cd huffman-file-compression 
+4. Run the application. (Assuming you have Maven installed)
+   ```bash
    mvn spring-boot:run
-4. Open your browser and visit http://localhost:8080.
-5. Upload your file. Click "Compress" and witness the magic! Explore other features on the user-friendly interface.
+6. Open your browser and visit http://localhost:8080.
+7. Upload your file. Click "Compress" and witness the magic! Explore other features on the user-friendly interface.
 
 ## Contributing
 
